@@ -1,0 +1,20 @@
+<form action="/post/update/{{post._id}}?_method=PUT" method="POSt">  
+        <div class="container">   
+            <label>title : </label>   
+            <input type="text" value=" {{post.title}}" placeholder="Enter title" name="title" required>  
+            <label>info : </label>  
+            <textarea name="info">
+ {{post.title}}
+            </textarea> 
+            <button type="submit">update post</button>   
+        </div>   
+    </form>     
+
+<form action="/post/delete/{{post._id}}?_method=DELETE" method="POSt">  
+        
+            <button type="submit">Delete post</button>   
+           
+    </form>     
+
+   
+   
